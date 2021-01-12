@@ -1,0 +1,1605 @@
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 0 auto;
+  background-color: #00a6e3;
+  background-image: linear-gradient(
+    #00a6e3, 
+    #005d91);
+}
+
+nav {
+  display: flex;
+  width: 94%;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.small-logo {
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+
+.small-logo img {
+  height: 47px;
+  background-position: center;
+  background-size: cover;
+}
+
+.topnav-mobile {
+  display: none;
+}
+
+/* Buttons below */
+.main-menu {
+  width: 60%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu-btn {
+  background-color: #00a6e3;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.dropdown-menu {
+  position: relative;
+  display: inline-block;  
+  margin-left: 5px;
+  z-index: 2;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown-menu:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-menu:hover .menu-btn {
+  background-color: #005d91;
+}
+/* ^^ Buttons End ^^ */
+
+header {
+  width: auto;
+  /* Change height to vw or vh? */
+  height: 50vh;
+  background-image: url(./final-images/header-main.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*  Parallax  */
+  background-attachment: fixed;
+  background-position: bottom;
+  /* ^^ */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Main NAANOVO logo in header */
+#main-logo-big {
+  position: relative;
+  opacity: 1;
+  width: 55vw;
+  max-width: 375px;
+  z-index: 1;
+  object-position: center;
+  margin: 0 auto;
+}
+
+/* Tagline in heading */
+header h3 {
+  font-size: 2em;
+  color: rgb(255, 226, 62);
+  letter-spacing: 0.5px;
+  z-index: 1;
+  margin: 20px 0 30px;
+  text-shadow: 1.5px 1.5px rgb(63, 64, 149);
+}
+
+/* Globe logo in background */
+#main-header-globe {
+  position: absolute;
+  opacity: 80%;
+  height: 35vh;
+  z-index: 0;
+}
+
+.main-page {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.5)
+  ),url(./final-images/tree-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.main-page h4 {
+  font-size: 2rem;
+  color: gold;
+  letter-spacing: 2px;
+  margin: 10px 0 0 0 ;
+}
+
+/* Main Page - Our Company Section */
+.main-page section {
+  display: flex;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  justify-content: space-between;
+  background-color: rgba(95, 95, 95, 0.7);
+  padding: 5px 10px;
+  align-items: center;
+  color: white;
+  max-width: 1300px;
+}
+
+.main-page section article {
+  display: flex;
+  flex-flow: column;
+  width: 75%;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.main-page section p {
+  text-align: justify;
+  padding: 15px 30px;
+}
+
+.main-page section img {
+  width: 25%;
+  margin: 10px 10px;
+}
+
+#our-company img {
+  max-width: 225px;
+}
+
+#our-goal img {
+  max-width: 190px;
+}
+
+#founder-message-pic {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  width: 30%;
+  align-items: center;
+}
+
+#founder-message-pic img{
+  max-width: 149px;
+  width: auto;
+}
+
+#founder-message-pic figcaption {
+  margin: 5px 0 10px 0;
+  text-align: center;
+  font-size: 0.9em;
+  color: white;
+}
+
+/* Download PDF brochure */
+#download-pdf {
+  padding-top: 0;
+  text-align: center;
+}
+
+#download-pdf a {
+  text-decoration: none;
+  color: white;
+}
+
+#download-pdf a:hover {
+  color: gold;
+}
+
+/* Our values - Text reveal with hover */
+#our-values h4 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#our-values {
+  position: relative;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(95, 95, 95, 0.7);
+  color: white;
+  margin-bottom: 20px;
+  padding: 5px 10px;
+  font-size: 1.1rem;
+  max-width: 1300px;
+}
+
+.text-container {
+  display: none;
+  width: 65%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  margin-left: 33%;
+  text-align: justify;
+}
+
+.text-hold {
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  color: white;
+  width: 65%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  margin-left: 33%;
+  text-align: justify;
+}
+
+.values {
+  color: gold;
+  font-size: 1.3rem;
+  padding: 15px 10px;
+  width: 30%;
+  text-align: center;
+}
+
+.value-title {
+  color: gold; 
+  font-size: 1.2rem; 
+  letter-spacing: 1px;
+}
+
+p {
+  padding: 30px;
+}
+
+.values:hover + .text-container {
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  color: white;
+}
+
+#our-values:hover .text-hold p {
+  display: none;
+}
+
+.values:hover {
+  background-color: rgba(95, 95, 95, 0.8);
+  border-radius: 5px;
+}
+
+#our-values-mobile {
+  display: none;
+}
+
+/* Page Footers */
+footer {
+  display: flex;
+}
+
+.small-world {
+  width: 30%;
+}
+
+.small-world img{
+  height: 65px;
+  margin: 15px 10px;
+  box-sizing: border-box;
+}
+
+.small-world img:hover {
+  filter: opacity(70%);
+}
+
+.footer-links {
+  display: flex;
+  width: 65%;
+  justify-content: flex-end;
+}
+
+footer ul {
+  list-style-type: none;
+  justify-content: flex-end;
+  padding-left: 100px;
+  line-height: 2rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+footer a:hover {
+  color: gold;
+}
+
+/* OUR TECHNOLOGY PAGE */
+
+/* Introduction */
+.our-tech-intro {
+  display: flex;
+  width: 65%;
+  max-width: 900px;
+  margin: 20px auto;
+  align-items: center;
+}
+
+.our-tech-intro article {
+  text-align: center;
+  padding: 0 20px;
+  background-color: rgb(255, 255, 255, 0.6);
+}
+
+.our-tech-intro p {
+  text-align: justify;
+  color: black;
+}
+
+/* Our Technology Main Product Images */
+.product-pages-tech {
+  display: flex;
+  margin: 20px 10px;
+  justify-content: space-around;
+}
+
+.product-pages-tech a{
+  height: 40vh;
+  width: 23%;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: white;
+}
+
+/* Product Logo Titles */
+.product-pages-tech .product-titles {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 75%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.wte-pic-main .product-titles {
+  background-image: url(./Naanovo-Logos/WTEMaax-Logo.png);
+  /* margin-bottom: 5px; */
+}
+
+.solar-pic-main .product-titles {
+  background-image: url(./Naanovo-Logos/SolarMaax-Logo.png);
+}
+
+.bio-pic-main .product-titles {
+  background-image: url(./Naanovo-Logos/BioMaax-Logo.png);
+  margin-bottom: 5px;
+}
+
+.tyre-pic-main .product-titles {
+  background-image: url(./Naanovo-Logos/TyreMaax-Logo.png);
+}
+
+.product-text-reveal {
+  height: inherit;
+}
+
+.product-text-reveal p {
+  height: inherit;
+  margin: 0;
+  padding: 0 5px;
+  display: none;  
+}
+
+/* Hover to reveal */
+.product-pages-tech a:hover .product-text-reveal p{
+  background-image: linear-gradient(
+    rgba(80, 80, 80, 0.5),
+    rgba(141, 141, 141, 0.5)
+  );
+  background-position: center;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  color: gold;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.product-pages-tech a:hover .product-titles {
+  display: none;
+}
+
+/* product background pictures */
+.product-pages-tech .wte-pic-main {
+  background-image: url(./final-images/wte-crane.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.product-pages-tech .solar-pic-main {
+  background-image: url(./final-images/Solar-trough.bmp);
+  background-position: left;
+}
+
+.product-pages-tech .bio-pic-main {
+  background-image: url(./final-images/bio-maxx.jpg);
+  background-position: left;
+}
+
+.product-pages-tech .tyre-pic-main {
+  background-image: url(./final-images/tyre-temp.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+/* Main section for Tech Page */
+.tech-page {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.5)
+  ),url(./final-images/Mobile-solar-panels.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top;
+}
+
+.tech-page section {
+  display: flex;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  justify-content: space-between;
+  background-color: rgba(95, 95, 95, 0.8);
+  padding: 10px 10px;
+  align-items: center;
+  color: white;
+  max-width: 1300px;
+}
+
+.product-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-section p {
+  padding: 10px 30px 20px 30px;
+}
+
+/* Solar Maax Links */
+#solar-links {
+  margin-bottom: 30px;
+  align-self: center;
+}
+
+.solar-individual-link {
+  margin-top: 20px;
+}
+
+#solar-links a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: white;
+  font-weight: 400;
+}
+
+#solar-links a:hover {
+  color: gold;
+}
+
+/* All Product Logos */
+.tech-page .tech-logo {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 50vw;
+  max-width: 600px;
+  margin: 10px auto 0 auto;
+}
+
+#wte-section .tech-logo {
+  background-image: url(./Naanovo-Logos/WTEMaax-Logo.png);
+}
+
+#solar-section .tech-logo {
+  background-image: url(./Naanovo-Logos/SolarMaax-Logo.png);
+}
+
+#bio-section .tech-logo {
+  background-image: url(./Naanovo-Logos/BioMaax-Logo.png);
+}
+
+#tyre-section .tech-logo {
+  background-image: url(./Naanovo-Logos/TyreMaax-Logo.png);
+}
+
+/* wte/maxx side pics */
+.tech-page .side-pics, .side-pics-to-move {
+  display: flex;
+  flex-direction: column;
+  height: 60vw; 
+  max-height: 600px;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.tech-page section .tech-pics, .tech-pics-to-move {
+  height: 180px;
+  width: 180px;
+  object-fit: cover;
+}
+
+/* Hide pics on comp view, only show on mobile */
+.side-pics-mobile {
+  display: none;
+}
+
+.tech-pics-mobile {
+  display: none;
+}
+
+/* Our Projects Section */
+
+.our-projects {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.5)
+  ),url(./final-images/turbines.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top;
+}
+
+#project-section {
+  color: gold;
+  text-align: center;
+  font-size: 2em;
+}
+
+.project-text {
+  display: flex;
+  width: 90%;
+  margin: 0 auto 30px auto;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgb(247, 247, 247, 0.8);
+  max-width: 900px;
+}
+
+.project-text p {
+  width: 80%;
+}
+
+.project-text img {
+  width: 150px;
+  height: 150px;
+}
+
+#projects-under-development {
+  margin: 0 auto;
+  padding: 0;
+}
+
+#projects-under-development img {
+  width: 95vw;
+  max-width: 950px;
+}
+
+.project-image-row {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  margin: 10px auto;
+  padding: 0;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1300px;
+}
+
+.project-image-row img {
+  width: 150px;
+  height: 150px;
+  margin: 5px;
+  object-fit: cover;
+}
+
+/* Certification Section */
+
+#certification-section {
+  color: gold;
+  text-align: center;
+  font-size: 2em;
+}
+
+.certify-text {
+  background-color: rgb(247, 247, 247, 0.8);
+  width: 80%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px;
+  text-align: justify;
+}
+
+.certify-pics {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  max-width: 900px;
+  margin: 10px auto;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.certify-pics figure {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+
+.certify-pics figcaption {
+  margin-top: 5px;
+  text-align: center;
+  font-size: 0.9em;
+  color: white;
+}
+
+.certify-pics img {
+  width: 100%;
+  max-width: 150px;
+  align-self: center;
+}
+
+/* ORGANIZATION PAGE */
+
+#company-structure {
+  display: flex;
+  width: 90%;
+  max-width: 950px;
+  margin: 20px auto;
+  align-items: center;
+  padding: 0 20px;
+  background-color: rgb(255, 255, 255, 0.6);
+}
+
+#company-structure p {
+  text-align: justify;
+  color: black;
+}
+
+#company-structure img {
+  height: 200px;
+}
+
+/* Organisation Chart */
+
+.org-chart-image img {
+  position: relative;
+  width: 90vw;
+  max-width: 684px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 15px;
+}
+
+/*  Manager Pictures */
+
+.main-team-page {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.75),
+    rgba(255, 255, 255, 0.75)
+  ),url(./final-images/lightning-three.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.our-management-team h2, h3 {
+  color: rgb(63, 64, 149);
+  text-align: center;
+  padding-top: 20px;
+  font-size: 2em;
+}
+
+.our-management-team {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 950px;
+}
+
+.first-row, .second-row, .third-row, .fourth-row {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.top-two {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin: 40px 0 50px 0;
+}
+
+.middle-three {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.third-row {
+  flex-wrap: wrap;
+}
+
+.bottom-five {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.board-five {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.first-row img, .second-row img {
+  height: 200px;
+  width: 200px;
+}
+
+.third-row img {
+  height: 180px;
+  width: 180px;
+  margin: 5px;
+}
+
+.fourth-row img {
+  height: 160px;
+  width: 160px;
+  margin: 5px;
+}
+
+.our-management-team h4, h5 {
+  font-weight: bold;
+  margin: 0;
+  padding-top: 10px;
+}
+
+.subheading-italic {
+  font-size: 12px;
+  margin: 0;
+  padding: 10px;
+  min-height: 40px;
+}
+
+/* OUR MEMBERS - NAMES AND ADDRESSES */
+.our-members h3 {
+  color: gold;
+}
+
+.our-members {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.our-members h5 {
+  font-size: 1em;
+}
+
+.our-members address {
+  font-style: normal;
+  font-weight: 300;
+}
+
+.members-info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 1500px;
+  width: 900px;
+  max-width: 900px;
+  margin: 0 auto;
+  color: white;
+}
+
+.members-info div {
+  height: 200px;
+  flex-direction: column;
+  margin: 5px;
+}
+
+.members-info div a {
+  text-decoration: none;
+  color: white;
+}
+
+.members-info div a:hover {
+  color: gold;
+}
+
+#parent-company {
+  display: inherit;
+  background-image: url(./final-images/lightning-four.jpg);
+  background-position: left;
+  background-size: cover;
+  height: 400px;
+  text-align: center;
+  color: gold;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  margin-top: 20px;
+  font-weight: 300;
+}
+
+#parent-company p {
+  text-transform: capitalize;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+}
+
+#parent-company a {
+  text-decoration: none;
+  color: gold;
+  font-weight: 400;
+}
+
+/*  Alliance and Friends Section */
+
+/* h2 */
+#alliance-section {
+  color: gold;
+  text-align: center;
+  font-size: 2em;
+}
+
+.alliance {
+  display: flex;
+  background-image: url(./final-images/power-lines.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.alliance-titles {
+  color: white;
+  font-weight: 700;
+  font-size: 1.6em;
+  letter-spacing: 1px;
+  padding: 30px;
+  text-align: right;
+  width: 30%;
+}
+
+.alliance-pics {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 50%;
+  max-width: 800px;
+  align-items: center;
+  margin: 10px 10px 10px 0;
+  background-color: white;
+  border: rgb(63, 64, 149) 2px solid;
+  padding: 15px 0;
+}
+
+.alliance-pics img {
+  width: 20%;
+  object-fit: cover;
+  padding: 6px;
+}
+
+#trademarks {
+  font-size: 0.75em;
+  font-weight: 300;
+  margin: 20px auto 20px auto;
+  text-align: center;
+  padding: 0;
+  color: white;
+}
+
+/* Contact Page */
+
+/* Clear colour for nav buttons */
+.menu-btn-contact {
+  background-color: #00a6e300;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.dropdown-menu:hover .menu-btn-contact {
+  background-color: #005d91;
+}
+
+#contact-header {
+  background-image: none;
+  height: 40vh;
+}
+
+#contact-header img {
+  opacity: 98%;
+}
+
+.main-contact address {
+  font-style: normal;
+  font-weight: 300;
+}
+
+.office {
+  color: gold;
+}
+
+.parent-company-contact {
+  display: inherit;
+  height: 340px;
+  text-align: center;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  margin-top: 30px;
+  font-weight: 300;
+}
+
+.parent-company-contact h5 {
+  font-size: 1.3em;
+}
+
+.parent-company-contact p {
+  font-size: 1.1em;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+.parent-company-contact a {
+  text-decoration: none;
+  color: white;
+}
+
+.parent-company-contact a:hover {
+  color: gold;
+}
+
+#members-contact-link {
+  margin: 20px auto 60px auto;
+  display: flex;
+}
+
+#members-contact-link a {
+  font-weight: 400;
+  font-size: 1.3em;
+  text-decoration: none;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  justify-self: center;
+}
+
+#members-contact-link a:hover {
+  color: gold;
+}
+
+
+/* For smaller comp screens */
+@media only screen and (max-width: 925px) {
+
+  .our-tech-intro {
+    width: 90%;
+  }
+
+  /* For product images on product page */
+  .tech-page section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tech-page .side-pics, .side-pics-mobile  {
+    display: flex;
+    flex-direction: row;
+    height: 200px; 
+    max-height: 600px;
+    width: 100%;
+    justify-content: space-around;
+  }
+  
+  .tech-page section .tech-pics, .side-pics-mobile .tech-pics, .tech-pics-mobile {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+  }
+
+  .mobile-picture-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 160px;
+    width: 95%;
+  }
+
+  .tech-pics-mobile {
+    display: block;
+  }
+  
+  .side-pics-to-move {
+    display: none;
+  }
+
+  .tech-pics-to-move {
+    display: none;
+  }
+  
+  /*  Names and addresses */
+  .our-members {
+    font-size: 0.75em;
+  }
+  
+  .members-info {
+    height: 2000px;
+    width: 650px;
+    max-width: 768px;
+  }
+  
+  .members-info div {
+    height: 150px;
+    width: 210px;
+  }
+  
+  #parent-company {
+    height: 300px;
+    width: 220px;
+    font-size: 1.1em;
+  }
+  
+  /* Board of Directors pictures */
+  .fourth-row {
+    flex-wrap: wrap;
+  }
+
+  .board-five {
+    width: 30%;
+    margin-bottom: 10px;
+  }
+}
+
+/* For smaller screens, tablets */
+@media only screen and (max-width: 768px) {
+
+  /*  Main header */
+  header h1 {
+    font-size: 2.5em;
+    color: white;
+  }
+  
+  header h3 {
+    font-size: 1.5em;
+    color: gold;
+  }
+
+  /*  Main product buttons  */
+  .product-pages-tech {
+    flex-wrap: wrap;
+  }
+  
+  .product-pages-tech a{
+    height: 25vh;
+    width: 45%;
+    background-size: cover;
+    margin: 10px 0;
+  }
+  
+  
+  .main-page section {
+    width: 90%;
+  }
+  
+  .main-page section article {
+    width: 99%;
+    padding: 0;
+  }
+  
+  .main-page section p {
+    padding: 15px;
+  }
+  
+  .main-page section img {
+    width: 40%;
+    margin: 10px 10px;
+  }
+  
+  #our-company, #our-goal, #our-founder {
+    flex-flow: column;
+    width: 93%;
+    padding: 0;
+  }
+
+  /* Our Values alternate mobile view */
+  #our-values-mobile {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(95, 95, 95, 0.7);
+    width: 93%;
+    margin: 0 auto 20px auto;
+    text-align: center;
+    padding: 0, 10px;
+  }
+
+  .values-mobile {
+    color: gold;
+    font-size: 1.3rem;
+    text-align: center;
+    padding-top: 20px;
+  }
+  
+  .text-container-mobile {
+    text-align: justify;
+    align-items: center; 
+    justify-content: center;
+    color: white;
+    margin: 0 auto;
+  }
+
+  .text-container-mobile p {
+    padding: 0 25px;
+  }  
+
+  #our-values {
+    display: none;
+  }
+
+
+  /*  Names and addresses */
+  .our-members {
+    font-size: 1em;
+    flex-wrap: nowrap;
+  }
+
+  .members-info {
+    height: unset;
+    width: 95%;
+  }
+
+  .members-info div {
+    height: unset;
+    width: 200px;
+    padding: 10px 0;
+    margin: 0 auto;
+  }
+
+  #parent-company {
+    margin: 15px auto 10px auto;
+    height: 400px;
+    width: 300px;
+  }
+
+  /* Management Pictures */
+  .our-management-team h2, h3 {
+    font-size: 1.75em;
+  }
+  
+  .top-two {
+    margin: 40px 0;
+    justify-content: flex-start;
+  }
+  
+  .middle-three {
+    width: 30%;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+  }
+
+  .bottom-five {
+    justify-content: flex-start;
+    margin-bottom: 30px;
+  }
+  
+  .board-five {
+    justify-content: flex-start;
+  }
+
+  .first-row img, .second-row img {
+    height: 95px;
+    width: 95px;
+  }
+
+  .third-row img, .fourth-row img {
+    height: 90px;
+    width: 90px;
+  }
+
+  .our-management-team h4, h5 {
+    font-size: 0.8em;
+  }
+}
+
+/* For mobile with no hover option */
+@media (hover: none) {
+/* Fix parralax background images in place for mobile */
+  header, .main-page, .tech-page, .main-team-page, .our-projects {
+    background-attachment: scroll;
+  }
+
+  #our-values-mobile, #our-values, #our-founder, #our-company, #our-goal {
+    width: 90%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  /* Our Values alternate mobile view */
+  #our-values-mobile {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(95, 95, 95, 0.7);
+    /* width: 93%; */
+    margin: 0 auto 20px auto;
+    text-align: center;
+    /* padding: 0; */
+  }
+
+  .values-mobile {
+    color: gold;
+    font-size: 1.3rem;
+    text-align: center;
+    padding-top: 20px;
+  }
+  
+  .text-container-mobile {
+    text-align: justify;
+    align-items: center; 
+    justify-content: center;
+    color: white;
+    margin: 0 auto;
+  }
+
+  .text-container-mobile p {
+    padding: 0 25px;
+  }  
+
+  #our-values {
+    display: none;
+  }
+}
+
+
+@media only screen and (max-width: 736px) {
+
+/* Fix parralax background images in place for mobile */
+  /* header, .main-page, .tech-page, .main-team-page, .our-projects {
+    background-attachment: scroll;
+  } */
+
+  .tech-page {
+    background-image: linear-gradient(
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.5)
+  ),url(./final-images/Mobile-solar-panels.jpg);
+  }
+
+  .main-menu, .small-logo {
+    display: none;
+  }
+
+  /*  BURGER MENU */
+  nav {
+    display: flex;
+    width: 100%;
+    margin: 0;
+  }
+  
+  .topnav-mobile {
+    width: 100%;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .main-bar-mobile {
+    width: 60%;
+  }
+
+  .main-bar-mobile img {
+    height: 47px;
+    background-position: center;
+    background-size: cover;
+  }
+
+  /* Style the navigation menu */
+  .topnav-mobile {
+    overflow: hidden;
+    background-color: #00a6e3;
+    position: relative;
+    display: block;
+  }
+
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav-mobile #myLinks {
+    display: none;
+  }
+
+  /* Style navigation menu links */
+  .topnav-mobile a {
+    color: white;
+    padding: 6px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+  }
+
+  /* Style the hamburger menu */
+  .topnav-mobile a.burger-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #00a6e3;
+    position: absolute; 
+    right: 0;
+    top: 0;
+    padding: 12px 16px;
+    height: 38px;
+    width: 38px;
+  }
+
+  /* Add a dark blue background color on mouse-over */
+  .topnav-mobile a:hover {
+    background-color: #005d91;
+    color: white;
+  }
+
+ .topnav-mobile ul {
+   margin: 0;
+  }
+
+ #myLinks {
+   padding: 10px 20px;
+  }
+
+  #myLinks li {
+    list-style-type: none;
+  }
+
+  /* Style the active link (or home/logo) */
+  .main-bar-mobile {
+    background-color: #00a6e3;
+    color: white;
+  }
+
+  .links-footer {
+    display: none;
+  }
+
+  .alliance {
+    background-position: center;
+  }
+}
+
+/* Landscape Only */
+@media only screen and (orientation : landscape) {
+
+  /* For product page picture links */
+  .product-pages-tech {
+    flex-wrap: nowrap;
+  }
+
+  .product-pages-tech a{
+    height: 50vh;
+    width: 24%;
+    background-size: cover;
+    margin: 10px 0;
+  }
+
+  /*  Banner Heading */
+  header {
+    height: 60vh;
+  }
+
+  #main-logo-big {
+    width: 50vh;
+  }
+  
+  header h3 {
+    margin-top: 10px;
+  }
+
+  #contact-header {
+    height: 60vh;
+  }
+}
+
+/* For smaller screens, phones */
+@media only screen and (max-width: 568px) {
+
+  /* Change all font size */
+  body, .subheading-italic {
+    font-size: 0.8em;
+  }
+  .value-title {
+    font-size: 1.2em;
+  }
+
+  .main-page h4 {
+    font-size: 1.75em;
+  }
+
+  #our-values-mobile, #our-values, #our-founder, #our-company, #our-goal {
+    width: 90%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+/* Our Organisation Introduction */
+  #company-structure {
+    flex-direction: column;
+    width: 90%;
+    padding: 0 0 30px 0;
+  }
+  
+  #company-structure p {
+    margin: 0;
+  }
+  
+  #company-structure img {
+    height: 200px;
+    width: 250px;
+    object-fit: cover;
+  }
+
+/* Our Project Introduction */
+  #project-section {
+    font-size: 2em;
+  }
+  
+  .project-text {
+    flex-direction: column;
+    width: 90%;
+    padding: 10px 0 20px 0;
+  }
+  
+  .project-text p {
+    width: 85%;
+    padding: 10px;
+    text-align: justify;
+  }
+
+  .links-footer {
+    display: none;
+  }
+
+  .our-tech-intro p {
+    padding: 12px;
+  }
+
+  #trademarks {
+    padding: 0 20px;
+  }
+
+  .parent-company-contact {
+    height: 280px;
+  }
+}
+
+
+@media only screen and (max-width: 320px) {
+
+  /* Main title */
+  header h1 {
+    font-size: 1.75em;
+  }
+  
+  header h3 {
+    font-size: 1.5em;
+  }
+
+  /* Names and Addresses */
+  .our-members {
+    font-size: 0.75em;
+    flex-wrap: nowrap;
+  }
+
+  .members-info div {
+    height: unset;
+    width: 150px;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  #parent-company {
+    margin: 15px auto 10px auto;
+    height: 300px;
+    width: 225px;
+  }
+
+  /* Tech Pictures */
+
+  .tech-page p {
+    padding: 15px;
+  }
+
+  .tech-page .side-pics, .side-pics-mobile  {
+    height: 140px; 
+  }
+
+  .tech-page section .tech-pics, .side-pics-mobile .tech-pics, .tech-pics-mobile {
+    height: 115px;
+    width: 115px;
+  }
+
+  .mobile-picture-box {
+    justify-content: space-between;
+    height: 120px;
+  }
+
+  .certify-text {
+    padding: 15px;
+  }
+  
+  .certify-pics figure {
+    width: 45%;
+  }
+}
