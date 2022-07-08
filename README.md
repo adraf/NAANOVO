@@ -1,10 +1,12 @@
 # NAANOVO
 ### Completed January 2021
 
+I completed this project in my spare time, around my full time role. This took around 30 hours.
+
 ## Project Overview
 This client wanted their site to be based very closely with the PDF of their company offerings, so the branding and content was already in place. I drafted some low fidelity wireframes for the layout so that the translation from PDF to site made sense, and users could navigate their way through easily.
 
-This was created using mainly HTML and CSS, with a small amount of Javascript for the mobile menu. I found myself most comfortable using CSS Flexbox and this made up a lot of the CSS styling for each page. 
+This was created using mainly HTML and CSS, with a small amount of JavaScript for the mobile menu. I found myself most comfortable using CSS Flexbox and this made up a lot of the CSS styling for each page. 
 
 You can see the full site here: [Naanovo.com](http://www.naanovo.com/)
 
@@ -12,7 +14,7 @@ You can see the full site here: [Naanovo.com](http://www.naanovo.com/)
 
 - HTML5
 - CSS3
-- Javascript
+- JavaScript
 
 ## Featured Code
 
@@ -40,7 +42,7 @@ header {
 
 ### Burger Menu
 
-A very small amount of Javascript was used for the mobile burger menu function, using an if/else statement and a comparison operator. 
+A very small amount of JavaScript was used for the mobile burger menu function, using an if/else statement and a comparison operator. 
 
 ```function myFunction() {
   var x = document.getElementById("myLinks");
@@ -66,7 +68,7 @@ I needed to make sure to add edits for mobile users as some of the site's featur
 
 ## Challenges
 
-I have a section that states the companies key values on the main page, which I wanted to make more interactive for the user. As you hover over each value title you are then shown some more copy on how the company upholds this value. I needed to have a placeholder when the page first loads and then the ability for this to be changed as you hover. This meant duplicating the first option into its own class and subsequently hiding it as the user begins to hover through the other options. In future I would look to do this animation with Javascript.
+I have a section that states the companies key values on the main page, which I wanted to make more interactive for the user. As you hover over each value title you are then shown some more copy on how the company upholds this value. I needed to have a placeholder when the page first loads and then the ability for this to be changed as you hover. This meant duplicating the first option into its own class and subsequently hiding it as the user begins to hover through the other options. In future I would look to do this animation with JavaScript.
 
 ```
 <h4>Our Values</h4>
@@ -82,7 +84,7 @@ I have a section that states the companies key values on the main page, which I 
 ## Wins
 
 - Parallax scrolling
-- Media queries
+- Media Queries
 - Wireframing
 
 ## Key Learnings
@@ -92,6 +94,4 @@ I have a section that states the companies key values on the main page, which I 
 
 ## Future Content
 
-- Add more Javascript for interactivity and for flexibility, instead of being reliant on CSS options.
-
-
+- Add more JavaScript for interactivity and for flexibility, instead of being reliant on CSS options.
