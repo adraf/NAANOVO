@@ -2,6 +2,7 @@
 ### Completed January 2021
 
 **Time Frame**
+
 I completed this project in my spare time, around my full time role. This took around 30 hours.
 
 ## Project Overview
